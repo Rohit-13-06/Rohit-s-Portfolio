@@ -168,7 +168,7 @@ export default function CanvasScrollytelling({ scrollProgress, onLoaded, rotateX
             }}
           >
             <div style={{ color: '#fff', fontFamily: 'var(--font-headline)', fontSize: '0.85rem', letterSpacing: '0.3em', textTransform: 'uppercase', opacity: 0.8 }}>
-              INITIALIZING ENGINE...
+              LOADING...
             </div>
             
             <div style={{ width: '240px', height: '1px', background: 'rgba(255,255,255,0.05)', overflow: 'hidden' }}>

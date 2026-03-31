@@ -208,7 +208,7 @@ export default function ContactSection() {
               {status === 'sending' ? '⚡ Initializing...' : 
                status === 'success' ? '✓ Message Transmitted' : 
                status === 'error' ? '❌ Uplink Failed' : 
-               'Send Transmission →'}
+               'Send Request →'}
             </motion.button>
             
             {status === 'success' && (
