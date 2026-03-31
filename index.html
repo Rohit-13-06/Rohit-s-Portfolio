@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rohit Yerrarapu — AI-Focused Web Developer building intelligent real-world applications. B.Tech CSE student specializing in NLP, React, and full-stack development." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Rohit Yerrarapu — AI-Focused Web Developer</title>
+    
+    <!-- Preload fonts so they're ready before NameReveal renders -->
+    <link rel="preload" href="/fonts/rapid-response-font/RapidResponseBold3D-2vrov.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/fonts/rapid-response-font/RapidResponse-rvYo7.otf" as="font" type="font/otf" crossorigin>
+  
+    <style>
+      @font-face {
+        font-family: 'RapidBold3D';
+        src: url('/fonts/rapid-response-font/RapidResponseBold3D-2vrov.otf') format('opentype');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'RapidFinalForce';
+        src: url('/fonts/rapid-response-font/RapidResponse-rvYo7.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- Hidden preloaders force browser to download fonts immediately -->
+    <div style="position:absolute;left:-9999px;top:-9999px;font-family:'RapidBold3D';font-size:1px;" aria-hidden="true">R</div>
+    <div style="position:absolute;left:-9999px;top:-9999px;font-family:'RapidFinalForce';font-size:1px;" aria-hidden="true">.</div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Font Test</title>
+<style>
+  @font-face {
+    font-family: 'TestRapid';
+    src: url('/fonts/rapid-response-font/RapidResponse-rvYo7.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'TestRapid2';
+    src: url('/RapidNow.otf') format('opentype');
+  }
+  body { background: #111; color: white; font-size: 60px; padding: 40px; }
+  .test1 { font-family: 'TestRapid', serif; color: cyan; }
+  .test2 { font-family: 'TestRapid2', serif; color: lime; }
+  .test3 { font-family: 'Inter', sans-serif; color: orange; }
+  .test4 { font-family: serif; color: pink; }
+  .label { font-size: 16px; color: #888; font-family: monospace; margin-top: 30px; }
+</style>
+</head>
+<body>
+  <div class="label">TestRapid (rapid-response-font folder):</div>
+  <div class="test1">ROHIT YERRARAPU</div>
+  
+  <div class="label">TestRapid2 (RapidNow.otf at root):</div>
+  <div class="test2">ROHIT YERRARAPU</div>
+  
+  <div class="label">Inter (Google Font):</div>
+  <div class="test3">ROHIT YERRARAPU</div>
+  
+  <div class="label">Default serif (browser fallback):</div>
+  <div class="test4">ROHIT YERRARAPU</div>
+  
+  <div class="label" id="status"></div>
+  <script>
+    document.fonts.ready.then(() => {
+      const fonts = Array.from(document.fonts).map(f => f.family + ': ' + f.status);
+      document.getElementById('status').innerHTML = 
+        '<br>Loaded fonts: ' + fonts.join(', ') + 
+        '<br><br>Total registered: ' + document.fonts.size;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Project specific
+.env
+.env.project
+/public/old_animations
+*.zip
+font_base64.txt
+
+# Heavy Animation Data (>100MB)
+ezgif-531d33769eb0c843-png-split-mobile/
+ezgif-76be80a5bd1eb02a-png-split/
+"First keyboard animation"/
+"second flow animation"/
