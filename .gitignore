@@ -26,12 +26,5 @@ dist-ssr
 # Project specific
 .env
 .env.project
-/public/old_animations
 *.zip
 font_base64.txt
-
-# Heavy Animation Data (>100MB)
-ezgif-531d33769eb0c843-png-split-mobile/
-ezgif-76be80a5bd1eb02a-png-split/
-"First keyboard animation"/
-"second flow animation"/
